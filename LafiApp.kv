@@ -1,0 +1,141 @@
+GridLayoutFood:
+
+
+<GridLayoutFood>:
+    # rows
+    # cols
+    cols: 5
+    rows: 5
+    Label:
+        text:"CHICKEN"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    Label:
+        text: root.my_text_1
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    IntegerTextInput:
+        id: my_text_input_1
+        size_hint: None, 1
+        width: "100dp"
+        text: root.my_text_1
+        multiline: False
+        on_text_validate: root.on_text_validate('my_text_1', self)
+    Button:
+        text:"+"
+        on_release: root.on_button_click_plus('my_text_1')
+        # size_hint: .8, .5
+        # pos: "100dp", "200dp"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+        background_color: 0.5,0.5,1,1
+        # on_press
+    Button:
+        text:"-"
+        on_release: root.on_button_click_minus('my_text_1')
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+        background_color: 0.5,0.5,1,1
+    Label:
+        text:"PORK"
+        # size: "100dp" , "80dp"
+        # pos: "200dp", "200dp"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    Label:
+        text: root.my_text_2
+        # size: "100dp" , "80dp"
+        # pos: "200dp", "200dp"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    IntegerTextInput:
+        id: my_text_input_2
+        size_hint: None, 1
+        width: "100dp"
+        text: root.my_text_2
+        multiline: False
+        on_text_validate: root.on_text_validate('my_text_2', self)
+    Button:
+        text:"+"
+        on_release: root.on_button_click_plus('my_text_2')
+        color: 100, 100, 0, 100
+        background_color: 0.5,0.5,1,1
+    Button:
+        text:"-"
+        on_release: root.on_button_click_minus('my_text_2')
+        font_size: "20sp"
+        size: self.texture_size
+        color: 100, 100, 0, 100
+        background_color: 0.5,0.5,1,1
+    Label:
+        text:"EGGS"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    Label:
+        text:root.my_text_3
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    IntegerTextInput:
+        id: my_text_input_3
+        size_hint: None, 1
+        width: "100dp"
+        text: root.my_text_3
+        multiline: False
+        on_text_validate: root.on_text_validate('my_text_3', self)
+    Button:
+        text:"+"
+        on_release: root.on_button_click_plus('my_text_3')
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+        background_color: 0.5,0.5,1,1
+    Button:
+        text:"-"
+        on_release: root.on_button_click_minus('my_text_3')
+        font_size: "20sp"
+        size: self.texture_size
+        color: 100, 100, 0, 100
+        background_color: 0.5,0.5,1,1
+    Label:
+        text:"FISH"
+        # size: "100dp" , "80dp"
+        # pos: "200dp", "200dp"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    Label:
+        text: root.my_text_4
+        # size: "100dp" , "80dp"
+        # pos: "200dp", "200dp"
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+    IntegerTextInput:
+        id: my_text_input_4
+        size_hint: None, 1
+        width: "100dp"
+        text: root.my_text_4
+        multiline: False
+        on_text_validate: root.on_text_validate('my_text_4', self)
+    Button:
+        text:"+"
+        on_release: root.on_button_click_plus('my_text_4')
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+        background_color: 0.5,0.5,1,1
+    Button:
+        text:"-"
+        on_release: root.on_button_click_minus('my_text_4')
+        color: 100, 100, 0, 100
+        font_size: "20sp"
+        size: self.texture_size
+        background_color: 0.5,0.5,1,1
